@@ -12,11 +12,14 @@ its intended to be used for development purposes.
 
 Install
 -------------
+```
 $ virtualenv env
 $ ./env/bin/python setup.py develop
+```
 
 Running
 -------------
+```
 $ ./env/bin/mongo-proxy --mongo=localhost:27017 --listen=localhost:29017
-
+```
 then you can connect your application to localhost:29017 and see your queries and responses.
