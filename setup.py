@@ -7,7 +7,7 @@ setup(
     packages=['mongoproxy'],
     include_package_data=True,
     zip_safe=False,
-    install_requires=[],
+    install_requires=['gevent', 'bson', 'pymongo'],
     entry_points = {
         'console_scripts': [
             'mongo-proxy = mongoproxy.proxy:run_proxy',
